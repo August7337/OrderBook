@@ -11,8 +11,10 @@ endif()
 
 project ("OrderBook")
 
+include_directories(include)
+
 # Ajoutez une source à l'exécutable de ce projet.
-add_executable (OrderBook "OrderBook.cpp" "OrderBook.h")
+add_executable (OrderBook "OrderBook.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET OrderBook PROPERTY CXX_STANDARD 20)
