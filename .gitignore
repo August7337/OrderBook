@@ -1,0 +1,14 @@
+# Fichiers Visual Studio
+.vs/
+*.user
+
+# Dossiers de compilation CMake
+out/
+build/
+bin/
+obj/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+*.exe
+*.out
