@@ -1,8 +1,21 @@
 ﻿#include <iostream>
 #include "Order.hpp"
+#include "OrderBook.hpp"
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+    OrderBook orderBook;
+
+    Order bidOrder = {
+        "ORD_001",
+        15050,
+        10,
+        Side::Buy,
+        123456789
+    };
+
+    orderBook.addOrder(bidOrder);
+
+	std::cout << "Hello CMake." << std::endl;
 	return 0;
 }
