@@ -16,6 +16,7 @@ int main()
 
     orderBook.addOrder(bidOrder);
 
-	std::cout << "Hello CMake." << std::endl;
+    orderBook.printBook();
+
 	return 0;
 }

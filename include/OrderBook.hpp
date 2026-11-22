@@ -1,6 +1,7 @@
 #pragma once
-#include "Order.hpp"
+#include <iostream>
 #include <vector>
+#include "Order.hpp"
 
 class OrderBook
 {
@@ -22,6 +23,23 @@ public:
 		else
 		{
 			asks.push_back(order);
+		}
+	}
+
+	void printBook() const
+	{
+		std::cout << "BID ORDERS:\n";
+		
+		for (const auto& order : bids)
+		{
+			std::cout << order.id << " - " << order.quantity << " - " << order.price << '\n';
+		}
+
+		std::cout << "\nASK ORDERS:\n";
+		
+		for (const auto& order : asks)
+		{
+			std::cout << order.id << " - " << order.quantity << " - " << order.price << '\n';
 		}
 	}
 
